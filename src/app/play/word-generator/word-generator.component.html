@@ -1,0 +1,97 @@
+<div class="container is-fluid mt-4 mb-4">
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Slider - AUI
+                </h1>
+                <h2 class="subtitle">
+                    Let's do some slides
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="card">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <div class="card-content">
+                    <div class="box has-text-centered">
+                        <h1 class="subtitle has-text-info">
+                            Word limit : {{limit}}
+                        </h1>
+                        <!-- <input class="slider is-fullwidth is-info" step="1" min="0" max="100" value="50" type="range"> -->
+                        <input (change)="slider($any($event.target).value)" type="range" name="generate" id="generate" min="1"
+                            max="50" value="{{limit}}" class="slider is-fullwidth is-info is-large">
+                        <div class="block">
+                            <button (click)="generate()" class="button is-primary">Get Countries</button>
+                        </div>
+
+                        <div *ngIf="words" class="card">
+                            <div class="notification is-primary">
+                                <p class="has-text-primary-light">{{words}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="content">
+                            <div class="subtitle has-text-info">TODO</div>
+                            <ol type="1">
+                                <li>Move the slider between 1 to 50</li>
+                                <li>Click on the get countries button</li>
+                                <li>Validate that countries are generated based on slider values</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card-content">
+                    <div class="notification is-info">
+                        <p class="subtitle">What can I learn from this?</p>
+                    </div>
+                    <div class="box has-background-info-light">
+                        <div class="content">
+                            <ol type="1">
+                                <li>How to move the slider</li>
+                                <li>Validating the results</li>
+                                <li>How to use String functions like split()</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="notification is-danger">
+                        <p class="subtitle">Are you struck?</p>
+                    </div>
+                    <div class="box">
+                        <button routerLink='/videos' class="button is-primary is-outlined is-fullwidth">
+                            Refer the video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container is-fluid mt-4 mb-4">
+    <div class="box has-text-centered">
+        <h1 class="title has-text-primary">
+            Country Generator
+        </h1>
+    </div>
+    <div class="box has-text-centered">
+        <h1 class="subtitle has-text-info">
+            Word limit : {{limit}}
+        </h1>
+        <input (change)="slider($event.target.value)" type="range" name="generate" id="generate" min="1" max="50"
+            value="{{limit}}">
+        <div class="block">
+            <button (click)="generate()" class="button is-primary">Get Countries</button>
+        </div>
+
+        <div *ngIf="words" class="card">
+            <div class="notification is-primary">
+                <p class="has-text-primary-light">{{words}}</p>
+            </div>
+        </div>
+    </div>
+</div> -->

@@ -1,0 +1,80 @@
+<div class="container is-fluid mt-4 mb-4">
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Find Elements
+                </h1>
+                <h2 class="subtitle">
+                    Find multiple elements & get familiar with <strong>List (Java) or Arrays (JS/TS)</strong>
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="card">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <div class="card-content">
+                    <form (ngSubmit)=" findUser() ">
+                        <div class="field has-addons has-addons-centered">
+                            <p class="control is-expanded">
+                                <input class="input" [(ngModel)]=" username " type="text" name="username"
+                                    placeholder="Enter your git user name eg., ortonikc" required>
+                            </p>
+                            <p class="control">
+                                <button class="button is-primary" type="submit" id="search">
+                                    Search
+                                </button>
+                            </p>
+                        </div>
+                    </form>
+                    <div class="block" *ngIf="user">
+                        <app-usercard [user]="user"></app-usercard>
+                        <app-gitrepos [repoUrl]="user.repos_url"></app-gitrepos>
+                    </div>
+                    <div class="block" *ngIf="!user">
+                        <div class="content">
+                            <ol type="1">
+                                <li>Type and Enter your Git username</li>
+                                <li>Assert that user has image</li>
+                                <li>Print the user name & other informations</li>
+                                <li>Assert that no.of public repositories are listed correctly</li>
+                                eg. if Public Repos has 10 then in the list 10 links should be available
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card-content">
+                    <div class="notification is-info">
+                        <p class="subtitle">What can I learn from this?</p>
+                    </div>
+                    <div class="box has-background-info-light">
+                        <div class="content">
+                            <ol type="1">
+                                <li>findElements</li>
+                                <li>List (Java)</li>
+                                <li>Enhanced for loop</li>
+                                <li>To validate image is exists</li>
+                                <li>Assert (Validation)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="notification is-danger">
+                        <p class="subtitle">Are you struck?</p>
+                    </div>
+                    <div class="box">
+                        <button routerLink='/videos' class="button is-primary is-outlined is-fullwidth">
+                            Refer the video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-zig-zag-deflect" [fullScreen]="true">
+    <p style="color: white"> LetCoding...
+    </p>
+</ngx-spinner>

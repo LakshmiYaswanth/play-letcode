@@ -1,0 +1,58 @@
+<div class="container is-fluid mt-4 mb-4">
+    <div class="columns is-narrow-fullhd">
+        <div class="column bg">
+            <div class="box column is-half is-offset-one-quarter">
+                <h1 class="title">SIGN UP</h1>
+                <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control has-icons-left">
+                            <input class="input" id="name" name="name" ngModel type="text" placeholder="Enter your name"
+                                required>
+                            <span class="icon is-small is-left">
+                                <fa-icon [icon]="faUser"></fa-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left">
+                            <input ngModel id="email" name="email" class="input" type="text"
+                                placeholder="Enter valid email address" required>
+                            <span class="icon is-small is-left">
+                                <fa-icon [icon]="faEnvelope"></fa-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Password</label>
+                        <div class="control has-icons-left">
+                            <input ngModel name="password" id="pass" class="input" type="password"
+                                placeholder="Enter your password" required>
+                            <span class="icon is-small is-left">
+                                <fa-icon [icon]="faLock"></fa-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox" id="agree">
+                                I agree to the <a>terms and conditions</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field has-addons has-addons-centered">
+                        <p class="control">
+                            <button class="button is-primary">{{ "Sign Up" | uppercase }}</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-zig-zag-deflect" [fullScreen]="true">
+    <p style="color: white"> LetCoding...
+    </p>
+</ngx-spinner>

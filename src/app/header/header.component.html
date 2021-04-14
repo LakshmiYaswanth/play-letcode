@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-md navbar-default" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" [routerLink]="['/']">
+            <img src="../../assets/logo.png" alt="letcode">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" (click)="openBurger()"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu is-tab">
+        <div class="navbar-start">
+            <a routerLink="/letxpath" routerLinkActive='is-active is-tab' class="navbar-item">
+                LetXPath
+            </a>
+            <a routerLink="/interview/selenium-interview-videos" routerLinkActive='is-active is-tab'
+                class="navbar-item">
+                Interview Preparation
+            </a>
+            <a routerLink="/playwright" routerLinkActive='is-active is-tab' class="navbar-item">
+                Playwright
+            </a>
+            <a routerLink="/test-practice" routerLinkActive='is-active is-tab' class="navbar-item">
+                Test Practice
+            </a>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div *ngIf="email" class="image has-text-centered mr-2">
+                    <figure class="image is-32x32">
+                        <a href="/">
+                            <img [src]="src">
+                        </a>
+                    </figure>
+                </div>
+                <div class="buttons">
+                    <a *ngIf="!email" class="button is-primary" [routerLink]=" ['/signup'] ">
+                        <strong>Sign up</strong>
+                    </a>
+                    <a *ngIf="!email" class=" button is-info" [routerLink]=" ['/signin'] ">
+                        Log in
+                    </a>
+                    <a *ngIf="email" class="button is-info" [routerLink]=" ['/'] " (click)="signOut()">
+                        Sign out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,70 @@
+<div class="container is-fluid mt-4 mb-4 Site-content">
+    <div class="columns is-narrow-fullhd">
+        <div class="column bg">
+            <div class="box column is-half is-offset-one-quarter">
+                <h1 class="title">{{ "Login" | uppercase }}</h1>
+                <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left">
+                            <input class="input" name="email" ngModel type="text" placeholder="Enter registered email">
+                            <span class="icon is-small is-left">
+                                <fa-icon [icon]="user"></fa-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Password</label>
+                        <div class="control has-icons-left">
+                            <input class="input" name="password" ngModel type="password" placeholder="Enter password">
+                            <span class="icon is-small is-left">
+                                <fa-icon [icon]="pass"></fa-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field has-addons has-addons-centered">
+                        <p class="control">
+                            <button class="button is-primary">{{ "Login" | uppercase }}</button>
+                        </p>
+                    </div>
+                </form>
+                <div class="field">
+                    <button class="button is-link is-light" (click)="onClick()">Forgotten password?</button>
+                </div>
+                <div class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Forgotten password?</p>
+                            <button (click)="onClose()" class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <form (ngSubmit)="forgot(fg)" #fg="ngForm">
+                                <div class="field">
+                                    <div class="control has-icons-left">
+                                        <input class="input" name="fgEmail" ngModel type="text"
+                                            placeholder="Enter registered email">
+                                        <span class="icon is-small is-left">
+                                            <fa-icon [icon]="user"></fa-icon>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field has-addons has-addons-centered">
+                                    <p class="control">
+                                        <button class="button is-primary">{{ "Reset" | uppercase }}</button>
+                                    </p>
+                                </div>
+                                <div class="notification is-primary is-hidden">
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-zig-zag-deflect" [fullScreen]="true">
+    <p style="color: white"> LetCoding...
+    </p>
+</ngx-spinner>

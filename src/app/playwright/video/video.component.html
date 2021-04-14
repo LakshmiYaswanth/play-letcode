@@ -1,0 +1,7 @@
+<ol class="box" *ngFor="let vid of list">
+    <div class="column is-mobile">
+        <p class="title">{{vid.title}}</p>
+        <div class='embed-container'><iframe [src]="vid.video" frameborder='0' allowfullscreen></iframe>
+        </div>
+    </div>
+</ol>

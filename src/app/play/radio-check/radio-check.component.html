@@ -1,0 +1,129 @@
+<div class="container is-fluid mt-4 mb-4">
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Radio button & checkbox
+                </h1>
+                <h2 class="subtitle">
+                    Interact with different types of <strong>Radio buttons & Check boxes</strong>
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="card">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <div class="card-content">
+                    <div class="field">
+                        <label for="name" class="label">Select any one</label>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="answer" id="yes">
+                                Yes
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="answer" id="no">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="name" class="label">Cofirm you can select only one radio button</label>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="one" id="one">
+                                Yes
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="one" id="two">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="name" class="label">Find the bug</label>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="nobug" id="nobug">
+                                Yes
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="bug" id="bug">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="name" class="label">Find which one is selected</label>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="foobar" id="foo">
+                                Foo
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="foobar" id="notfoo" checked>
+                                Bar
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="name" class="label">Confirm last field is disabled</label>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="plan" id="going">
+                                Going
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="plan" id="notG">
+                                Not going
+                            </label>
+                            <label class="radio" disabled>
+                                <input type="radio" name="plan" id="maybe" disabled>
+                                Maybe
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="name" class="label">Find if the checkbox is selected?</label>
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            Remember me
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="name" class="label">Accept the T&C</label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            I agree to the <a>FAKE terms and conditions</a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card-content">
+                    <div class="notification is-info">
+                        <p class="subtitle">What can I learn from this?</p>
+                    </div>
+                    <div class="box has-background-info-light">
+                        <div class="content">
+                            <ol type="1">
+                                <li>click()</li>
+                                <li>isSelected()</li>
+                                <li>isEnabled()</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="notification is-danger">
+                        <p class="subtitle">Are you struck?</p>
+                    </div>
+                    <div class="box">
+                        <button routerLink='/videos' class="button is-primary is-outlined is-fullwidth">
+                            Refer the video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

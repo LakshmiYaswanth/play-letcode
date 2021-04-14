@@ -1,0 +1,81 @@
+<div class="container is-fluid mt-4 mb-4">
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Buttons
+                </h1>
+                <h2 class="subtitle">
+                    Interact with different types of <strong>Buttons</strong>
+
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="card">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <div class="card-content">
+                    <div class="field">
+                        <label class="label" for="home">Goto Home and come back here using driver command</label>
+                        <div class="control">
+                            <button routerLink='/' class="button is-fullwidth is-link" id="home">Goto Home</button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="home">Get the X & Y co-ordinates</label>
+                        <div class="control">
+                            <button class="button is-fullwidth is-link is-outlined" id="position">Find Location</button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="home">Find the color of the button</label>
+                        <div class="control">
+                            <button class="button is-fullwidth is-primary" id="color">What is my color?</button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="home">Find the height & width of the button</label>
+                        <div class="control">
+                            <button class="button is-fullwidth is-success" id="property">How tall & fat I am?</button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="home">Confirm button is disabled</label>
+                        <div class="control">
+                            <button class="button is-info" title="Disabled button" id="isDisabled"
+                                disabled>Disabled</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card-content">
+                    <div class="notification is-info">
+                        <p class="subtitle">What can I learn from this?</p>
+                    </div>
+                    <div class="box has-background-info-light">
+                        <div class="content">
+                            <ol type="1">
+                                <li>click()</li>
+                                <li>driver navigation commands</li>
+                                <li>getLocation()</li>
+                                <li>getCss()</li>
+                                <li>getSize()</li>
+                                <li>isEnabled()</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="notification is-danger">
+                        <p class="subtitle">Are you struck?</p>
+                    </div>
+                    <div class="box">
+                        <button routerLink='/video/button' class="button is-primary is-outlined is-fullwidth">
+                            Refer the video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

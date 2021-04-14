@@ -1,0 +1,165 @@
+<div class="container is-fluid mt-4 mb-4">
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Selenium | Protractor | Playwright | WebDriver IO
+                </h1>
+                <h2 class="subtitle">
+                    Real-time Automation Project Practice
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="card">
+        <div class="card-content">
+            <div class="columns">
+                <div class="column">
+                    <div class="title">Pre-Condition</div>
+                    <div class="subtitle">Create a Service Now Instance and start Practice</div>
+                    <div class="content">
+                        <p>The tutorial isn't enough! Selenium Practice Site | Test Automation</p>
+                        <p>
+                            I strongly believe a tutorial isn't enough to learn anything, you need to practice to
+                            become
+                            a pro in it.
+                            I am providing you an application to do the practice and to enhance your confidence in
+                            coding.
+                        </p>
+                        <p>
+                            <a href="https://signon.service-now.com/ssoregister.do" target="_blank"
+                                class="button is-link">Sign Up
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://developer.servicenow.com/dev.do#!/home" target="_blank"
+                                class="button is-link">Login
+                            </a>
+                        </p>
+                        <div class="box">
+                            <p>If you find this helpful, A subs to the channel will be a great!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="block mt-1">
+                        <div class='embed-container'><iframe [src]="pre" frameborder='0' allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="title">TC001</div>
+            <div class="subtitle">Login Positive & Negative</div>
+            <div class="content">
+                <div class="columns">
+                    <div class="column">
+                        <h1>Login Positive:</h1>
+                        <ol>
+                            <li>Navigate to your service now instance</li>
+                            <li>Verify title is ServiceNow</li>
+                            <li>Verify username text field has label of User name</li>
+                            <li>Enter username (admin)</li>
+                            <li>Verify passowrd text field has label of Password</li>
+                            <li>Enter password (instance password)</li>
+                            <li>Verify language dropdown has label of Language</li>
+                            <li>Verify language is selected as English by default</li>
+                            <li>Verify forgot password is visible to the user</li>
+                            <li>Verify user can see the login button</li>
+                            <li>As user clicks on the login button</li>
+                            <li>Verify the title as ServiceNow</li>
+                        </ol>
+                        <h1>Login Negative:</h1>
+                        <ol>
+                            <li>Navigate to your service now instance</li>
+                            <li>Verify title is ServiceNow</li>
+                            <li>User clicks on the login button</li>
+                            <li>Verify the error message as Invalid input in user name!</li>
+                            <li>Enter the username as admin</li>
+                            <li>User clicks on the login button</li>
+                            <li>Verify the error message contains User name or password invalid</li>
+                        </ol>
+                    </div>
+                    <div class="column">
+                        <div class="block mt-1">
+                            <div class='embed-container'><iframe [src]="v1" frameborder='0' allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="title">TC002</div>
+                <div class="subtitle">Forgot Password</div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="content">
+                            <ol>
+                                <li>Navigate to the dervice now instance</li>
+                                <li>User should see the forgot password</li>
+                                <li>Click the forgot password</li>
+                                <li>User should see three tabs as Identify, Verify & Reset</li>
+                                <li>User should see the username label and text filed</li>
+                                <li>User should see the next button</li>
+                                <li>Enter the username as admin</li>
+                                <li>Click on the next button</li>
+                                <li>User should see the Request in progress popup</li>
+                                <li> User should see the Email field and email text box</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="block mt-1">
+                            <div class='embed-container'><iframe [src]="v2" frameborder='0' allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="title">TC003</div>
+                <div class="subtitle">Create Incident</div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="content">
+                            <ol>
+                                <li>Navigate to the service now instance</li>
+                                <li>Login to the application</li>
+                                <li>User should see the filter navigator text box</li>
+                                <li>Type incident in the navigator text box</li>
+                                <li>User should see the Create New</li>
+                                <li>Click on the Create New</li>
+                                <li>Verify the Number text box has already an incident number</li>
+                                <li>Incident number should starts with INC</li>
+                                <li>Save the incident number to use later</li>
+                                <li> Fill only the mandatory field</li>
+                                <ul>
+                                    <li>Click on the search icon</li>
+                                    <li>User should see the new window</li>
+                                    <li>User should see the search field</li>
+                                    <li>Type Abel Tuter in the search field</li>
+                                    <li>Click on the Abel Tuter from the search results</li>
+                                    <li>Popup should be closed</li>
+                                </ul>
+                                <li> Enter the short description (some random text)</li>
+                                <li> Click on the submit button</li>
+                                <li> User should create a Incident</li>
+                                <li> Confirm an incident is created</li>
+                                <li> User should see the search field</li>
+                                <li> Search with the incident number (data from step 9)</li>
+                                <li> Short description should be visible with the data passed in step 11</li>
+                                <li> Verfiy the title contains Incidents</li>
+                                <li> Logout the application</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="block mt-1">
+                            <div class='embed-container'><iframe [src]="v3" frameborder='0' allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>

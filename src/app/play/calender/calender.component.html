@@ -1,0 +1,75 @@
+<div class="container is-fluid mt-4 mb-4">
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Calendar
+        </h1>
+        <h2 class="subtitle">
+          Handle Dates within range
+        </h2>
+      </div>
+    </div>
+  </section>
+  <div class="card">
+    <div class="columns">
+      <div class="column is-two-thirds">
+        <div class="card-content">
+          <div class="columns">
+            <div class="column">
+              <nwb-date-picker #datePicker2 [options]=" options" (clear)="onClear1()" (change)="timerChange($event)">
+                <input [nwbDatepickerStart]="datePicker2" type="text" nwbDateType="datetime" />
+              </nwb-date-picker>
+            </div>
+            <div class="column">
+              <nwb-date-picker #datePicker3 (change)="valueChange($event)" (clear)="onClear()">
+                <input [nwbDatepickerStart]="datePicker3" type="text" nwbDateType="date" />
+                <input [nwbDatepickerEnd]="datePicker3" type="text" nwbDateType="date" />
+              </nwb-date-picker>
+            </div>
+          </div>
+          <div class="content has-text-centered">
+            <p *ngIf="timer">You have selected {{ timer | date: 'short'}}</p>
+          </div>
+          <div class="content has-text-centered">
+            <p *ngIf="startDate">You have selected from {{ startDate | date: 'dd-MMM-yyyy'}} to
+              {{endDate | date: 'dd-MMM-yyyy'}}</p>
+          </div>
+
+          <div class="content">
+            <p class="subtitle has-text-info">TODO</p>
+            <ol type="1">
+              <li>Select start date as today</li>
+              <li>Select end date after 3 days</li>
+              <li>Select time after 2 hrs</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card-content">
+          <div class="notification is-info">
+            <p class="subtitle">What can I learn from this?</p>
+          </div>
+          <div class="box has-background-info-light">
+            <div class="content">
+              <ol type="1">
+                <li>How to handle calendar elements</li>
+                <li>How to set dynamic dates</li>
+                <li>Java calendar & moment.js</li>
+              </ol>
+            </div>
+          </div>
+          <div class="notification is-danger">
+            <p class="subtitle">Are you struck?</p>
+          </div>
+          <div class="box">
+            <button routerLink='/videos' class="button is-primary is-outlined is-fullwidth">
+              Refer the video
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

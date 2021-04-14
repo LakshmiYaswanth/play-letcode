@@ -1,0 +1,94 @@
+<div class="container is-fluid mt-4 mb-4">
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Alert
+                </h1>
+                <h2 class="subtitle">
+                    Interact with different types of <strong>Alerts</strong>
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="card">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <div class="card-content">
+                    <div class="field">
+                        <label class="label" for="alert-accept">Accept the Alert</label>
+                        <div class="control">
+                            <button (click)="simple()" class="button is-fullwidth is-link" id="accept">Simple
+                                Alert</button>
+                        </div>
+                    </div>
+                    <div class=" field">
+                        <label class="label" for="alert-dismiss">Dismiss the Alert & print the alert text</label>
+                        <div class="control">
+                            <button (click)="myConfirm()" class="button is-fullwidth is-link is-outlined"
+                                id="confirm">Confirm Alert</button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="alert-type">Type your name & accept</label>
+                        <div class="control">
+                            <button (click)="myPrompt($event)" class="button is-fullwidth is-primary" id="prompt">Prompt
+                                Alert</button>
+                            <div *ngIf='myName' class="box">
+                                <div class="notification is-info">
+                                    <p id="myName">Your name is: {{myName}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="alert-sweet">Sweet alert</label>
+                        <div class="control">
+                            <button (click)="onclick()" class="button is-fullwidth is-success" id="modern">Modern
+                                Alert</button>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-content">
+                            <div class="card">
+                                <div class="card-content">
+                                    <p class="title">Modern Alert - Some people address me as sweet alert as well
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button (click)="onClose()" class="modal-close is-large" aria-label="close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card-content">
+                    <div class="notification is-info">
+                        <p class="subtitle">What can I learn from this?</p>
+                    </div>
+                    <div class="box has-background-info-light">
+                        <div class="content">
+                            <ol type="1">
+                                <li>switchTo()</li>
+                                <li>accept()</li>
+                                <li>dismiss()</li>
+                                <li>getText()</li>
+                                <li>sendKeys()</li>
+                                <li>Sweet Alert</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="notification is-danger">
+                        <p class="subtitle">Are you struck?</p>
+                    </div>
+                    <div class="box">
+                        <button routerLink='/videos' class="button is-primary is-outlined is-fullwidth">
+                            Refer the video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

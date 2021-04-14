@@ -1,0 +1,6 @@
+iframe {
+    display: block;
+    border: none;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}

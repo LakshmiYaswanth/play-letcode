@@ -1,0 +1,87 @@
+/* .videoBG{
+    background-image: url('../../assets/SVG/SVG/Backgrounds/bg11.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+} */
+
+.illustration1{
+
+    position: absolute;
+    left: 0;
+    width: 150%;
+    margin-top: -12%;
+    left: -15%;
+    z-index: 1;
+  
+  }
+  
+  .illustration2{
+    position: absolute;
+    left: 0;
+    width: 150%;
+    margin-top: -12%;
+    left: -15%;
+    z-index: 1;
+  }
+  
+  .bag{
+    width: 7%;
+    margin-top: 46%;
+    position: absolute;
+    left: 78%;
+    z-index: 2;
+  }
+  
+  .women{
+    width: 22% !important;
+    position: absolute;
+    z-index: 1;
+    margin-top: 24%;
+    margin-left: 44%;
+  }
+  
+  .man-map{
+    width: 12% !important;
+    position: absolute;
+    left: 18%;
+    bottom: 12%;
+  }
+  
+  .boy{
+    position: absolute;
+    width: 12% !important;
+    left: 30%;
+    bottom: 12%;
+  }
+  
+  .man_with_ipad{
+    width: 15% !important;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    left: 17%;
+  }
+  
+  .women-hand-up{
+    width: 15% !important;
+    position: absolute;
+    right: 27%;
+    bottom: 12%;
+  
+  }
+  
+  .girl-phone{
+    position: absolute;
+    width: 12% !important;
+    left: 28%;
+    bottom: 9%;
+  }
+  
+  .man-hand-up{
+    position: absolute;
+    width: 19% !important;
+    right: 32%;
+    bottom: 7%;
+  }
+  

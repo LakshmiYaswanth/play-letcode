@@ -1,0 +1,37 @@
+<div class="container is-fluid mt-4 mb-4">
+  <div class="columns">
+    <div class="column is-fullwidth has-text-centered">
+      <section class="hero is-primary is-boldy">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Selenium / Java Interview - Questions & Answers
+            </h1>
+          </div>
+        </div>
+      </section>
+      <div class="card">
+        <div class="card-content">
+          <ol *ngFor="let questions of allquestions">
+            <div class="columns">
+              <div class="column">
+                <h1 class="field title is-primary">{{questions.title}}</h1>
+                <div class="content has-text-left ml-6">
+                  <li>{{ questions.Question1 }}</li>
+                  <li>{{ questions.Question2 }}</li>
+                  <li>{{ questions.Question3 }}</li>
+                </div>
+              </div>
+              <div class="column">
+                <div class='embed-container'><iframe [src]="questions.vid | safe" frameborder='0'
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

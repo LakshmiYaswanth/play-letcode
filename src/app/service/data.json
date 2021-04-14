@@ -1,0 +1,19 @@
+{
+    "alltodos": [
+        "Input",
+        "Button",
+        "Select",
+        "Alert",
+        "Frame",
+        "Radio & Checkbox",
+        "Windows",
+        "Find Elements",
+        "Drag AUI",
+        "Drop AUI",
+        "Sort AUI",
+        "Select AUI",
+        "Waits",
+        "Table",
+        "Advance Table"
+    ]
+}
